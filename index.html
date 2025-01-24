@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Edu Sohel</title>
+    <style>
+      /* Custom scrollbar styles */
+.custom-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#000] relative overflow-none h-screen">
+
+    <!-- top header -->
+    <header class="fixed top-0 right-0 left-0">
+      <nav class="flex item-center justify-center p-2 ">
+
+        <!-- home button icon -->
+        <img class="transition-transform duration-300 hover:scale-105 p-3 bg-[#292929] rounded-full mr-3" src="./assets/icon/home.svg" alt="">
+        
+        <!-- search bar -->
+        <div class="hover:outline outline-[#fff] flex p-3 bg-[#292929] rounded-full w-2/5">
+            <img src="./assets/icon/search.svg" alt="">
+            <input class="text-[#fff] bg-[#292929] ml-2 outline-none w-full" type="search" name="" id="" placeholder="what do you want to play ?">
+        </div>
+
+      </nav>
+    </header>
+
+    <main class="flex flex-col md:flex-row pt-[68px] h-full gap-3">
+
+      <!-- left section  -->
+      <section id="left-section" class="hidden md:block w-2/5 bg-[#121212] h-full rounded-md p-4">
+
+        <div class="flex text-[#fff] m-2 font-semibold text-xl justify-start align-center gap-3">
+          <img class="" src="./assets/icon/lib.svg" alt="">
+          <span>Your Library</span>
+        </div>
+
+        <div class="mt-8 flex flex-col gap-2 rounded-md bg-[#292929] p-4">
+          <h3 class="text-[#fff] font-bold">Create yoour first playlist</h3>
+          <span class="text-[#fff] ">Its easy we help you</span>
+          <button class="mt-3 bg-[#fff] font-bold w-fit px-3 py-1 rounded-2xl text-sm">Create playlist</button>
+        </div>
+
+        <div class="mt-8">
+          <ul class="text-gray-400 text-sm flex flex-wrap gap-3 p-3">
+            <li>Leagal</li>
+            <li>Safety & Privacy Center</li>
+            <li>Privacy Policy</li>
+            <li>Cookies</li>
+            <li>About Ads</li>
+            <li>Accessibility</li>
+          </ul>
+
+          <button class="mt-8 rounded-2xl text-[#fff] font-bold gap-2 py-1 px-3 outline outline-[1px] hover:outline-[2px] outline-gray-400 flex align-center justify-center"><img class="self-center" src="./assets/icon/lang.svg" alt=""><span>English</span></button>
+
+          <span class="block text-gray-400 mt-10 text-sm font-bold">Created by Sohel</span>
+        </div>
+      </section>
+
+      <!-- right section  -->
+      <section class="w-3/5 h-full w-full overflow-y-auto rounded-md p-3 bg-gradient-to-b from-[#292929] via-[#121212] to-[#121212]">
+
+        <div id="popular-artits-section">
+        <div class="flex justify-between">
+          <h3 class="text-[#fff] text-2xl font-bold ">Popular artits</h3>
+          <span class="text-[#fff]">Show all</span>
+        </div>
+        <div id="artits-card-container" class="p-3 flex flex-row gap-3 overflow-y-auto custom-scrollbar">
+
+          <div class="flex-none hover:bg-gray-500/10 hover:cursor-pointer w-fit p-2 rounded-md">
+            <img class="shadow-lg object-cover rounded-full h-[180px] w-[180px] " src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="Arjit Sing">
+            <h3 class="mt-2 text-xl font-semibold text-[#fff]">Arjit Singh</h3>
+            <span class="text-gray-400">Artist</span>
+          </div>
+
+          <div class="flex-none hover:bg-gray-500/10 hover:cursor-pointer w-fit p-2 rounded-md">
+            <img class="shadow-lg object-cover rounded-full h-[180px] w-[180px] " src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="Arjit Sing">
+            <h3 class="mt-2 text-xl font-semibold text-[#fff]">Arjit Singh</h3>
+            <span class="text-gray-400">Artist</span>
+          </div>
+
+          <div class="flex-none hover:bg-gray-500/10 hover:cursor-pointer w-fit p-2 rounded-md">
+            <img class="shadow-lg object-cover rounded-full h-[180px] w-[180px] " src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="Arjit Sing">
+            <h3 class="mt-2 text-xl font-semibold text-[#fff]">Arjit Singh</h3>
+            <span class="text-gray-400">Artist</span>
+          </div>
+
+          <div class="flex-none hover:bg-gray-500/10 hover:cursor-pointer w-fit p-2 rounded-md">
+            <img class="shadow-lg object-cover rounded-full h-[180px] w-[180px] " src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="Arjit Sing">
+            <h3 class="mt-2 text-xl font-semibold text-[#fff]">Arjit Singh</h3>
+            <span class="text-gray-400">Artist</span>
+          </div>
+
+          <div class="flex-none hover:bg-gray-500/10 hover:cursor-pointer w-fit p-2 rounded-md">
+            <img class="shadow-lg object-cover rounded-full h-[180px] w-[180px] " src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="Arjit Sing">
+            <h3 class="mt-2 text-xl font-semibold text-[#fff]">Arjit Singh</h3>
+            <span class="text-gray-400">Artist</span>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div id="popular-album-section" class="mt-7">
+        <div class="flex justify-between">
+          <h3 class="text-[#fff] text-2xl font-bold ">Popular albums and singles</h3>
+          <span class="text-[#fff]">Show all</span>
+        </div>
+        <div id="artits-card-container" class="p-3 flex flex-row gap-3 overflow-y-auto custom-scrollbar">
+
+          <div class="flex-none hover:bg-gray-500/10 hover:cursor-pointer w-fit p-2 rounded-md">
+            <img class="shadow-lg object-cover rounded-md h-[180px] w-[180px] " src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="Arjit Sing">
+            <h3 class="mt-2 text-xl font-semibold text-[#fff]">Arjit Singh</h3>
+            <span class="text-gray-400">Artist</span>
+          </div>
+
+        </div>
+      </div>
+
+
+      <footer class="mt-12">
+        <div class="flex flex-wrap justify-around">
+
+          <ul class="text-gray-400 flex flex-col gap-3">
+            <li class="text-[#fff] text-lg"><b>Company</b></li>
+            <li>About</li>
+            <li>Job</li>
+            <li>For the Record</li>
+          </ul>
+
+          <ul class="text-gray-400 flex flex-col gap-3">
+            <li class="text-[#fff] text-lg"><b>Communities</b></li>
+            <li>Artist</li>
+            <li>Developer</li>
+            <li>Advtiser</li>
+            <li>Invester</li>
+            <li>Venders</li>
+          </ul>
+
+          <ul class="text-gray-400 flex flex-col gap-3">
+            <li class="text-[#fff] text-lg"><b>Useful links</b></li>
+            <li>Support</li>
+            <li>Free Mobile App</li>
+          </ul>
+
+          <ul class="text-gray-400 flex flex-col gap-3">
+            <li class="text-[#fff] text-lg"><b>Plans</b></li>
+            <li>Premium Individual</li>
+            <li>Premium Duo</li>
+            <li>Premium Family</li>
+            <li>Premium Student</li>
+            <li>Free</li>
+          </ul>
+
+          <ul class="text-gray-400 flex flex-row gap-2">
+            <li><img class="transition-transform duration-300 hover:scale-105 p-3 bg-[#292929] rounded-full mr-3" src="./assets/icon/insta.svg" alt=""></li>
+            <li><img class="transition-transform duration-300 hover:scale-105 p-3 bg-[#292929] rounded-full mr-3" src="./assets/icon/x.svg" alt=""></li>
+            <li><img class="transition-transform duration-300 hover:scale-105 p-3 bg-[#292929] rounded-full mr-3" src="./assets/icon/fb.svg" alt=""></li>
+          </ul>
+
+        </div>
+        <div>
+          <span class="block h-[0.4px] w-full bg-[#292929] my-8"></span>
+          <span class="block text-gray-400 mb-10 p-8">© Created by Sohez for Educational Purpose</span>
+        </div>
+      </footer>
+      </section>
+    </main>
+  </body>
+</html>
